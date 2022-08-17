@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+:root {
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-conteudo: 'Montserrat';
+    --font-titulos: 'Nunito'
+}
+
+html, body {
+    min-height: 100%;
+    background-color: darkgray;
+    font-family: var(--font-padrao);
+}
+
+header {
+    background-color: rgba(25, 63, 16, 0.678);
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font-titulos);
+    font-size: 5vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font-conteudo);
+    font-weight: bolder;
+    font-size: 2vw;
+}
+
+section#img01{
+    background-image: url('../imagens/backgroud01.jpg');
+    background-position: top center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('../imagens/backgroud02.jpg');
+    background-size: cover;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.534);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px #00000079;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.322);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0.5px black;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
